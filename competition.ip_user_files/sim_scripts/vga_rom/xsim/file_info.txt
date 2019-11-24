@@ -1,0 +1,2 @@
+vga_rom.v,verilog,xil_defaultlib,../../../../competition.srcs/sources_1/ip/vga_rom/sim/vga_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

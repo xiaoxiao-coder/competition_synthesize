@@ -1,0 +1,1 @@
+-wto "aab020c6888f451fa0daad1c34cdd2b3" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "secureip" --snapshot "picture_fangz_func_synth" "xil_defaultlib.picture_fangz" "xil_defaultlib.glbl" -log "elaborate.log" 

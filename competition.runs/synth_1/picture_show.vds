@@ -1,0 +1,1225 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov 24 21:49:36 2019
+# Process ID: 10656
+# Current directory: D:/competition_synthesize/competition.runs/synth_1
+# Command line: vivado.exe -log picture_show.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source picture_show.tcl
+# Log file: D:/competition_synthesize/competition.runs/synth_1/picture_show.vds
+# Journal file: D:/competition_synthesize/competition.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source picture_show.tcl -notrace
+Command: synth_design -top picture_show -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8148 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 469.949 ; gain = 102.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'picture_show' [D:/competition_synthesize/competition.srcs/sources_1/new/picture_show.v:23]
+	Parameter hsync_end bound to: 10'b0001011111 
+	Parameter hdat_begin bound to: 10'b0010001111 
+	Parameter hdat_end bound to: 10'b1100001111 
+	Parameter hpixel_end bound to: 10'b1100011111 
+	Parameter vsync_end bound to: 10'b0000000001 
+	Parameter vdat_begin bound to: 10'b0000100010 
+	Parameter vdat_end bound to: 10'b1000000010 
+	Parameter vline_end bound to: 10'b1000001100 
+	Parameter picture_x bound to: 50 - type: integer 
+	Parameter picture_y bound to: 50 - type: integer 
+	Parameter picture_long bound to: 320 - type: integer 
+	Parameter picture_high bound to: 240 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ov7725' [D:/competition_synthesize/competition.srcs/sources_1/new/ov7725.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IICctrl_0' [D:/competition_synthesize/competition.srcs/sources_1/new/IICctrl_0.v:26]
+INFO: [Synth 8-6157] synthesizing module 'IICctrl' [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_IICctrl_1.0/sources_1/imports/src/IICctrl.v:21]
+	Parameter LUT_SIZE bound to: 170 - type: integer 
+	Parameter CLK_Freq bound to: 25000000 - type: integer 
+	Parameter I2C_Freq bound to: 10000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_IICctrl_1.0/sources_1/imports/src/IICctrl.v:99]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Controller' [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_IICctrl_1.0/sources_1/imports/src/I2C_Controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Controller' (1#1) [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_IICctrl_1.0/sources_1/imports/src/I2C_Controller.v:1]
+WARNING: [Synth 8-6014] Unused sequential element Config_Done_reg was removed.  [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_IICctrl_1.0/sources_1/imports/src/IICctrl.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'IICctrl' (2#1) [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_IICctrl_1.0/sources_1/imports/src/IICctrl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'IICctrl_0' (3#1) [D:/competition_synthesize/competition.srcs/sources_1/new/IICctrl_0.v:26]
+INFO: [Synth 8-6157] synthesizing module 'ov7725_regData_0' [D:/competition_synthesize/competition.srcs/sources_1/new/ov7725_regData_0.v:26]
+INFO: [Synth 8-6157] synthesizing module 'ov7725_regData' [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_ov7725_regData_1.0/ov7725_regData.v:22]
+	Parameter Read_DATA bound to: 0 - type: integer 
+	Parameter SET_OV7725 bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ov7725_regData' (4#1) [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_ov7725_regData_1.0/ov7725_regData.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ov7725_regData_0' (5#1) [D:/competition_synthesize/competition.srcs/sources_1/new/ov7725_regData_0.v:26]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (6#1) [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (21) of port connection 'addrb' does not match port width (17) of module 'blk_mem_gen_0' [D:/competition_synthesize/competition.srcs/sources_1/new/ov7725.v:101]
+INFO: [Synth 8-6157] synthesizing module 'cam_ov7670_ov7725_0' [D:/competition_synthesize/competition.srcs/sources_1/new/cam_ov7670_ov7725_0.v:26]
+INFO: [Synth 8-6157] synthesizing module 'cam_ov7670_ov7725' [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_cam_ov7670_ov7725_1.0/cam_ov7670_ov7725.v:23]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_cam_ov7670_ov7725_1.0/cam_ov7670_ov7725.v:59]
+WARNING: [Synth 8-3848] Net href_post in module/entity cam_ov7670_ov7725 does not have driver. [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_cam_ov7670_ov7725_1.0/cam_ov7670_ov7725.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'cam_ov7670_ov7725' (7#1) [D:/study/fpga/gesture_recognition/ov7725_EGO1/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog/XUP_cam_ov7670_ov7725_1.0/cam_ov7670_ov7725.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cam_ov7670_ov7725_0' (8#1) [D:/competition_synthesize/competition.srcs/sources_1/new/cam_ov7670_ov7725_0.v:26]
+WARNING: [Synth 8-350] instance 'design_1_cam_ov7670_ov7725_0_0' of module 'cam_ov7670_ov7725_0' requires 10 connections, but only 8 given [D:/competition_synthesize/competition.srcs/sources_1/new/ov7725.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'ov7725' (9#1) [D:/competition_synthesize/competition.srcs/sources_1/new/ov7725.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Img_Processor' [D:/competition_synthesize/competition.srcs/sources_1/new/Img_Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RGB_YCBCR' [D:/competition_synthesize/competition.srcs/sources_1/new/RGB_YCBCR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_YCBCR' (10#1) [D:/competition_synthesize/competition.srcs/sources_1/new/RGB_YCBCR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fuse' [D:/competition_synthesize/competition.srcs/sources_1/new/fuse.v:23]
+	Parameter kongxian bound to: 2'b00 
+	Parameter xiaodou bound to: 2'b01 
+	Parameter wait_sf bound to: 2'b10 
+	Parameter sf_xd bound to: 2'b11 
+	Parameter N_xd bound to: 24'b000000011000011010100000 
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/competition_synthesize/competition.srcs/sources_1/new/fuse.v:92]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/competition_synthesize/competition.srcs/sources_1/new/fuse.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'fuse' (11#1) [D:/competition_synthesize/competition.srcs/sources_1/new/fuse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Erosion' [D:/competition_synthesize/competition.srcs/sources_1/new/Erosion.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3x3_1bit' [D:/competition_synthesize/competition.srcs/sources_1/new/Shift_RAM_3x3_1bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3x3_bit' [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/Shift_RAM_3x3_bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3x3_bit' (12#1) [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/Shift_RAM_3x3_bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3x3_1bit' (13#1) [D:/competition_synthesize/competition.srcs/sources_1/new/Shift_RAM_3x3_1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Erosion' (14#1) [D:/competition_synthesize/competition.srcs/sources_1/new/Erosion.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dilation' [D:/competition_synthesize/competition.srcs/sources_1/new/dilation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dilation' (15#1) [D:/competition_synthesize/competition.srcs/sources_1/new/dilation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'count_study' [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:23]
+	Parameter kongxian bound to: 2'b00 
+	Parameter xiaodou bound to: 2'b01 
+	Parameter wait_sf bound to: 2'b10 
+	Parameter sf_xd bound to: 2'b11 
+	Parameter N_xd bound to: 24'b000000011000011010100000 
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:117]
+WARNING: [Synth 8-151] case item 4'b0010 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:409]
+WARNING: [Synth 8-151] case item 4'b0011 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:411]
+WARNING: [Synth 8-151] case item 4'b0100 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:413]
+WARNING: [Synth 8-151] case item 4'b0101 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:415]
+WARNING: [Synth 8-151] case item 4'b0110 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:417]
+WARNING: [Synth 8-151] case item 4'b0111 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:419]
+WARNING: [Synth 8-151] case item 4'b1000 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:421]
+WARNING: [Synth 8-151] case item 4'b1001 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:423]
+WARNING: [Synth 8-151] case item 4'b1010 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:425]
+WARNING: [Synth 8-151] case item 4'b1011 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:427]
+WARNING: [Synth 8-151] case item 4'b1100 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:429]
+WARNING: [Synth 8-151] case item 4'b1101 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:431]
+WARNING: [Synth 8-151] case item 4'b1110 is unreachable [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:433]
+INFO: [Synth 8-226] default block is never used [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:404]
+WARNING: [Synth 8-6014] Unused sequential element gest0_count_reg was removed.  [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:106]
+WARNING: [Synth 8-5788] Register shuma_reg in module count_study is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'count_study' (16#1) [D:/competition_synthesize/competition.srcs/sources_1/new/count_study.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gesture_judge' [D:/competition_synthesize/competition.srcs/sources_1/new/gesture_judge.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gesture_judge' (17#1) [D:/competition_synthesize/competition.srcs/sources_1/new/gesture_judge.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sobel_Edge_Detect' [D:/competition_synthesize/competition.srcs/sources_1/new/Sobel_Edge_Detect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3X3' [D:/competition_synthesize/competition.srcs/sources_1/new/Shift_RAM_3X3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3X3_8bit' [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/Shift_RAM_3X3_8bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3_8bit' (18#1) [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/Shift_RAM_3X3_8bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3' (19#1) [D:/competition_synthesize/competition.srcs/sources_1/new/Shift_RAM_3X3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Sobel_Edge_Detect' (20#1) [D:/competition_synthesize/competition.srcs/sources_1/new/Sobel_Edge_Detect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hu_martix' [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:24]
+	Parameter hdat_begin bound to: 10'b0010001111 
+	Parameter vdat_begin bound to: 10'b0000100010 
+	Parameter picture_x bound to: 50 - type: integer 
+	Parameter picture_y bound to: 50 - type: integer 
+	Parameter picture_long bound to: 320 - type: integer 
+	Parameter picture_high bound to: 240 - type: integer 
+	Parameter kongxian bound to: 2'b00 
+	Parameter xiaodou bound to: 2'b01 
+	Parameter wait_sf bound to: 2'b10 
+	Parameter sf_xd bound to: 2'b11 
+	Parameter N_xd bound to: 24'b000000011000011010100000 
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'div_gen_0' [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/div_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'div_gen_0' (21#1) [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/div_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'div_gen_32bit' [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/div_gen_32bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'div_gen_32bit' (22#1) [D:/competition_synthesize/competition.runs/synth_1/.Xil/Vivado-10656-DESKTOP-P038UOU/realtime/div_gen_32bit_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:307]
+INFO: [Synth 8-6155] done synthesizing module 'hu_martix' (23#1) [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:24]
+INFO: [Synth 8-6157] synthesizing module 'hu_judge' [D:/competition_synthesize/competition.srcs/sources_1/new/hu_judge.v:23]
+WARNING: [Synth 8-5788] Register count6_reg in module hu_judge is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/competition_synthesize/competition.srcs/sources_1/new/hu_judge.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'hu_judge' (24#1) [D:/competition_synthesize/competition.srcs/sources_1/new/hu_judge.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_gest_judge' [D:/competition_synthesize/competition.srcs/sources_1/new/dynamic_gest_judge.v:23]
+WARNING: [Synth 8-6014] Unused sequential element y0_reg was removed.  [D:/competition_synthesize/competition.srcs/sources_1/new/dynamic_gest_judge.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_gest_judge' (25#1) [D:/competition_synthesize/competition.srcs/sources_1/new/dynamic_gest_judge.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Img_Processor' (26#1) [D:/competition_synthesize/competition.srcs/sources_1/new/Img_Processor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'picture_show' (27#1) [D:/competition_synthesize/competition.srcs/sources_1/new/picture_show.v:23]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[23]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[22]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[21]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[20]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[19]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[18]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[17]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[16]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[15]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[14]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[13]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[12]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[11]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[10]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[9]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[8]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[7]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[6]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[5]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[4]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[3]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[2]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[1]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[0]
+WARNING: [Synth 8-3331] design ov7725 has unconnected port vga_rom_addr[20]
+WARNING: [Synth 8-3331] design ov7725 has unconnected port vga_rom_addr[19]
+WARNING: [Synth 8-3331] design ov7725 has unconnected port vga_rom_addr[18]
+WARNING: [Synth 8-3331] design ov7725 has unconnected port vga_rom_addr[17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 537.855 ; gain = 170.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 537.855 ; gain = 170.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 537.855 ; gain = 170.531
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/div_gen_32bit/div_gen_32bit/div_gen_0_in_context.xdc] for cell 'u_Img_Processor/u_hu_martix/u1_div_gen_32bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/div_gen_32bit/div_gen_32bit/div_gen_0_in_context.xdc] for cell 'u_Img_Processor/u_hu_martix/u1_div_gen_32bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/div_gen_0/div_gen_0/div_gen_0_in_context.xdc] for cell 'u_Img_Processor/u_hu_martix/u_div_gen_0'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/div_gen_0/div_gen_0/div_gen_0_in_context.xdc] for cell 'u_Img_Processor/u_hu_martix/u_div_gen_0'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/div_gen_0/div_gen_0/div_gen_0_in_context.xdc] for cell 'u_Img_Processor/u_hu_martix/u2_div_gen_0'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/div_gen_0/div_gen_0/div_gen_0_in_context.xdc] for cell 'u_Img_Processor/u_hu_martix/u2_div_gen_0'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/Erosion_inst/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/Erosion_inst/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/Erosion_inst/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/Erosion_inst/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/Erosion_inst2/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/Erosion_inst2/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/Erosion_inst2/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/Erosion_inst2/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/u_dilation/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/u_dilation/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/u_dilation/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/u_dilation/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/u_dilation2/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/u_dilation2/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/u_dilation2/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit/Shift_RAM_3x3_bit_in_context.xdc] for cell 'u_Img_Processor/u_dilation2/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit'
+Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_ov7725/design_1_blk_mem_gen_0_0'
+Finished Parsing XDC File [d:/competition_synthesize/competition.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_ov7725/design_1_blk_mem_gen_0_0'
+Parsing XDC File [D:/competition_synthesize/competition.srcs/constrs_1/new/competition.xdc]
+WARNING: [Vivado 12-507] No nets matched 'OV7725_PCLK_IBUF'. [D:/competition_synthesize/competition.srcs/constrs_1/new/competition.xdc:150]
+Finished Parsing XDC File [D:/competition_synthesize/competition.srcs/constrs_1/new/competition.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/competition_synthesize/competition.srcs/constrs_1/new/competition.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/picture_show_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/competition_synthesize/competition.srcs/constrs_1/new/competition.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/picture_show_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/picture_show_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/competition_synthesize/competition.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/competition_synthesize/competition.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 876.297 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 876.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 876.297 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 876.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 876.297 ; gain = 508.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 876.297 ; gain = 508.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_Img_Processor/u_hu_martix/u1_div_gen_32bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/u_hu_martix/u2_div_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/u_hu_martix/u_div_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/Erosion_inst/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/Erosion_inst2/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/u_dilation/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/u_dilation2/u_Shift_RAM_3x3_1bit/u1_Shift_RAM_3x3_bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/Erosion_inst/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/Erosion_inst2/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/u_dilation/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/u_dilation2/u_Shift_RAM_3x3_1bit/u2_Shift_RAM_3x3_bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ov7725/design_1_blk_mem_gen_0_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 876.297 ; gain = 508.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'mSetup_ST_reg' in module 'IICctrl'
+INFO: [Synth 8-5544] ROM "LUT_INDEX" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mSetup_ST" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "vcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/competition_synthesize/competition.srcs/sources_1/new/fuse.v:88]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/competition_synthesize/competition.srcs/sources_1/new/fuse.v:88]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/competition_synthesize/competition.srcs/sources_1/new/fuse.v:88]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/competition_synthesize/competition.srcs/sources_1/new/fuse.v:88]
+INFO: [Synth 8-802] inferred FSM for state register 'stata_reg' in module 'count_study'
+INFO: [Synth 8-5544] ROM "stata" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stata" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stata" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/competition_synthesize/competition.srcs/sources_1/new/Sobel_Edge_Detect.v:104]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/competition_synthesize/competition.srcs/sources_1/new/Sobel_Edge_Detect.v:83]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:159]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:160]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mSetup_ST_reg' using encoding 'sequential' in module 'IICctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                kongxian |                               00 |                               00
+                 xiaodou |                               01 |                               01
+                 wait_sf |                               10 |                               10
+                   sf_xd |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stata_reg' using encoding 'sequential' in module 'count_study'
+WARNING: [Synth 8-327] inferring latch for variable 'dx_reg' [D:/competition_synthesize/competition.srcs/sources_1/new/Img_Processor.v:370]
+WARNING: [Synth 8-327] inferring latch for variable 'dx2_reg' [D:/competition_synthesize/competition.srcs/sources_1/new/Img_Processor.v:371]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 876.297 ; gain = 508.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     49 Bit       Adders := 2     
+	   2 Input     48 Bit       Adders := 2     
+	   3 Input     34 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 2     
+	   3 Input     24 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
+	   4 Input     16 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               68 Bit    Registers := 3     
+	               64 Bit    Registers := 17    
+	               34 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 6     
+	               17 Bit    Registers := 19    
+	               16 Bit    Registers := 15    
+	               10 Bit    Registers := 10    
+	                8 Bit    Registers := 19    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 13    
+	                1 Bit    Registers := 84    
++---Multipliers : 
+	                34x34  Multipliers := 2     
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 7     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	  62 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	  19 Input      7 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 2     
+	  59 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 7     
+	   7 Input      5 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 9     
+	   6 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	  41 Input      1 Bit        Muxes := 5     
+	  60 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 59    
+	  59 Input      1 Bit        Muxes := 1     
+	  42 Input      1 Bit        Muxes := 4     
+	  19 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 23    
+	   5 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module picture_show 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module I2C_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	  62 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  59 Input      5 Bit        Muxes := 1     
+	  41 Input      1 Bit        Muxes := 5     
+	  60 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 30    
+	  59 Input      1 Bit        Muxes := 1     
+	  42 Input      1 Bit        Muxes := 4     
+	  19 Input      1 Bit        Muxes := 1     
+Module IICctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+Module cam_ov7670_ov7725 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module RGB_YCBCR 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   4 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 12    
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+Module fuse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  19 Input      7 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 3     
+Module Shift_RAM_3x3_1bit__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
+Module Erosion__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module Shift_RAM_3x3_1bit__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
+Module Erosion 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module Shift_RAM_3x3_1bit__xdcDup__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
+Module dilation__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module Shift_RAM_3x3_1bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
+Module dilation 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module count_study 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 18    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  19 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+Module gesture_judge 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+Module Shift_RAM_3X3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
+Module Sobel_Edge_Detect 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 6     
++---Registers : 
+	               10 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+Module hu_martix 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     49 Bit       Adders := 2     
+	   2 Input     48 Bit       Adders := 2     
+	   3 Input     34 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               68 Bit    Registers := 3     
+	               64 Bit    Registers := 17    
+	               34 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                34x34  Multipliers := 2     
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 7     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  19 Input      7 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 8     
+	   6 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+Module hu_judge 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 6     
++---Registers : 
+	                5 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 5     
+	   7 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module dynamic_gest_judge 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+Module Img_Processor 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:229]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:182]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:181]
+DSP Report: Generating DSP u_00_power_20, operation Mode is: A*B.
+DSP Report: operator u_00_power_20 is absorbed into DSP u_00_power_20.
+DSP Report: operator u_00_power_20 is absorbed into DSP u_00_power_20.
+DSP Report: Generating DSP u_00_power_20, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u_00_power_20 is absorbed into DSP u_00_power_20.
+DSP Report: operator u_00_power_20 is absorbed into DSP u_00_power_20.
+DSP Report: Generating DSP u_00_power_20, operation Mode is: A*B.
+DSP Report: operator u_00_power_20 is absorbed into DSP u_00_power_20.
+DSP Report: operator u_00_power_20 is absorbed into DSP u_00_power_20.
+DSP Report: Generating DSP u_00_power_20, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u_00_power_20 is absorbed into DSP u_00_power_20.
+DSP Report: operator u_00_power_20 is absorbed into DSP u_00_power_20.
+DSP Report: Generating DSP xy_power_200, operation Mode is: A*B.
+DSP Report: operator xy_power_200 is absorbed into DSP xy_power_200.
+DSP Report: operator xy_power_200 is absorbed into DSP xy_power_200.
+DSP Report: Generating DSP xy_power_200, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xy_power_200 is absorbed into DSP xy_power_200.
+DSP Report: operator xy_power_200 is absorbed into DSP xy_power_200.
+DSP Report: Generating DSP xy_power_200, operation Mode is: A*B.
+DSP Report: operator xy_power_200 is absorbed into DSP xy_power_200.
+DSP Report: operator xy_power_200 is absorbed into DSP xy_power_200.
+DSP Report: Generating DSP xy_power_200, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xy_power_200 is absorbed into DSP xy_power_200.
+DSP Report: operator xy_power_200 is absorbed into DSP xy_power_200.
+DSP Report: Generating DSP xy_power_020, operation Mode is: A*B.
+DSP Report: operator xy_power_020 is absorbed into DSP xy_power_020.
+DSP Report: operator xy_power_020 is absorbed into DSP xy_power_020.
+DSP Report: Generating DSP xy_power_020, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xy_power_020 is absorbed into DSP xy_power_020.
+DSP Report: operator xy_power_020 is absorbed into DSP xy_power_020.
+DSP Report: Generating DSP xy_power_020, operation Mode is: A*B.
+DSP Report: operator xy_power_020 is absorbed into DSP xy_power_020.
+DSP Report: operator xy_power_020 is absorbed into DSP xy_power_020.
+DSP Report: Generating DSP xy_power_020, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xy_power_020 is absorbed into DSP xy_power_020.
+DSP Report: operator xy_power_020 is absorbed into DSP xy_power_020.
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[23]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[22]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[21]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[20]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[19]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[18]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[17]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[16]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[15]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[14]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[13]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[12]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[11]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[10]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[9]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[8]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[7]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[6]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[5]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[4]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[3]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[2]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[1]
+WARNING: [Synth 8-3331] design dynamic_gest_judge has unconnected port focus_y[0]
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[0]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B1_reg[15]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B1_reg[14]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B1_reg[13]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R1_reg[15]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[0]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[1]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[2]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[3]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[4]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[5]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[6]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[7]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[8]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[9]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[13]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[15]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_G3_reg[15]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R3_reg[15]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B3_reg[14]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[0]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[1]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[2]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[3]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[4]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[5]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[6]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[7]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[8]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[9]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_G2_reg[15]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_R2_reg[15]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_RGB_YCBCR/cmos_B2_reg[15]' (FDC) to 'u_Img_Processor/u_RGB_YCBCR/cmos_R2_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_RGB_YCBCR/\cmos_R2_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\xy_power_00_reg[31] )
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_fuse/countxd_reg[17]' (FDC) to 'u_Img_Processor/u_fuse/countxd_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_fuse/countxd_reg[18]' (FDC) to 'u_Img_Processor/u_fuse/countxd_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_fuse/countxd_reg[19]' (FDC) to 'u_Img_Processor/u_fuse/countxd_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_fuse/countxd_reg[20]' (FDC) to 'u_Img_Processor/u_fuse/countxd_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_fuse/countxd_reg[21]' (FDC) to 'u_Img_Processor/u_fuse/countxd_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_fuse/countxd_reg[22]' (FDC) to 'u_Img_Processor/u_fuse/countxd_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_fuse/\countxd_reg[23] )
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_count_study/countxd_reg[17]' (FDC) to 'u_Img_Processor/u_count_study/countxd_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_count_study/countxd_reg[18]' (FDC) to 'u_Img_Processor/u_count_study/countxd_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_count_study/countxd_reg[19]' (FDC) to 'u_Img_Processor/u_count_study/countxd_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_count_study/countxd_reg[20]' (FDC) to 'u_Img_Processor/u_count_study/countxd_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_count_study/countxd_reg[21]' (FDC) to 'u_Img_Processor/u_count_study/countxd_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_count_study/countxd_reg[22]' (FDC) to 'u_Img_Processor/u_count_study/countxd_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_count_study/\countxd_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\countxd_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\countxd_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\countxd_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\countxd_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\countxd_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\countxd_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\countxd_reg[23] )
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[0]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[1]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[2]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[3]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[4]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[5]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[6]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/row3_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[0]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[1]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[2]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[2]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[3]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[3]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[4]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[4]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[5]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[5]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[6]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p33_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[6]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p32_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/u_dynamic_gest_judge/dynamic_judge_reg[0]' (FDCE) to 'u_Img_Processor/u_dynamic_gest_judge/dynamic_judge_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_dynamic_gest_judge/\dynamic_judge_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_count_study/\gest_kind_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Img_Processor/u_hu_martix/\gest_kind_reg[3] )
+INFO: [Synth 8-3886] merging instance 'u_ov7725/design_1_IICctrl_0_0/inst/mI2C_CLK_DIV_reg[11]' (FDC) to 'u_ov7725/design_1_IICctrl_0_0/inst/mI2C_CLK_DIV_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_ov7725/design_1_IICctrl_0_0/inst/mI2C_CLK_DIV_reg[12]' (FDC) to 'u_ov7725/design_1_IICctrl_0_0/inst/mI2C_CLK_DIV_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_ov7725/design_1_IICctrl_0_0/inst/mI2C_CLK_DIV_reg[13]' (FDC) to 'u_ov7725/design_1_IICctrl_0_0/inst/mI2C_CLK_DIV_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_ov7725/design_1_IICctrl_0_0/inst/mI2C_CLK_DIV_reg[14]' (FDC) to 'u_ov7725/design_1_IICctrl_0_0/inst/mI2C_CLK_DIV_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_ov7725/design_1_IICctrl_0_0/inst/mI2C_CLK_DIV_reg[15] )
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[0]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[1]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[2]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[3]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[4]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[5]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[6]' (FDCE) to 'u_Img_Processor/Sobel_Edge_Detect_inst/u_Shift_RAM_3X3/matrix_p31_reg[7]'
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[47]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[46]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[45]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[44]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[43]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[42]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[41]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[40]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[39]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[38]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[37]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[36]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[35]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[34]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[33]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[32]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[31]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[30]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[29]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[28]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[27]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[26]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[25]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[24]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[23]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[22]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[21]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[20]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[19]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[18]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[17]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[16]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[15]) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[47]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[46]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[45]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[44]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[43]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[42]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[41]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[40]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[39]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[38]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[37]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[36]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[35]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[34]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[33]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[32]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[31]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[30]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[29]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[28]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[27]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[26]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[25]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[24]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[23]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[22]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[21]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[20]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[19]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[18]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[17]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[16]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[15]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[14]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[13]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[12]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[11]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[10]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[9]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[8]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[7]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[6]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[5]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[4]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[3]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[2]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[1]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[0]__0) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[47]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[46]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[45]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[44]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[43]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[42]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[41]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[40]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[39]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[38]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[37]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[36]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[35]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[34]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[33]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[32]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[31]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[30]__1) is unused and will be removed from module hu_martix.
+WARNING: [Synth 8-3332] Sequential element (u_00_power_2_reg[29]__1) is unused and will be removed from module hu_martix.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 876.297 ; gain = 508.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+-------------------------------------------------------------+---------------+----------------+
+|Module Name    | RTL Object                                                  | Depth x Width | Implemented As | 
++---------------+-------------------------------------------------------------+---------------+----------------+
+|I2C_Controller | I2C_BIT                                                     | 64x1          | LUT            | 
+|ov7725_regData | LUT_DATA                                                    | 256x16        | LUT            | 
+|picture_show   | u_ov7725/design_1_IICctrl_0_0/inst/u_I2C_Controller/I2C_BIT | 64x1          | LUT            | 
+|picture_show   | u_ov7725/design_1_ov7725_regData_0_0/inst/LUT_DATA          | 256x16        | LUT            | 
++---------------+-------------------------------------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|hu_martix   | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hu_martix   | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 916.609 ; gain = 549.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 923.738 ; gain = 556.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:225]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:225]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:177]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:177]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:176]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:176]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:201]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:201]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:201]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:201]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:201]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:201]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:154]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/competition_synthesize/competition.srcs/sources_1/new/hu_martix.v:155]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 968.941 ; gain = 601.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 968.941 ; gain = 601.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 968.941 ; gain = 601.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 968.941 ; gain = 601.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 968.941 ; gain = 601.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 968.941 ; gain = 601.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 968.941 ; gain = 601.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |Shift_RAM_3x3_bit  |         8|
+|2     |Shift_RAM_3X3_8bit |         2|
+|3     |div_gen_0          |         2|
+|4     |div_gen_32bit      |         1|
+|5     |blk_mem_gen_0      |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |Shift_RAM_3X3_8bit    |     1|
+|2     |Shift_RAM_3X3_8bit__2 |     1|
+|3     |Shift_RAM_3x3_bit     |     1|
+|4     |Shift_RAM_3x3_bit__10 |     1|
+|5     |Shift_RAM_3x3_bit__11 |     1|
+|6     |Shift_RAM_3x3_bit__12 |     1|
+|7     |Shift_RAM_3x3_bit__13 |     1|
+|8     |Shift_RAM_3x3_bit__14 |     1|
+|9     |Shift_RAM_3x3_bit__8  |     1|
+|10    |Shift_RAM_3x3_bit__9  |     1|
+|11    |blk_mem_gen_0         |     1|
+|12    |div_gen_0             |     1|
+|13    |div_gen_0__2          |     1|
+|14    |div_gen_32bit         |     1|
+|15    |BUFG                  |     3|
+|16    |CARRY4                |   511|
+|17    |DSP48E1               |    11|
+|18    |LUT1                  |   105|
+|19    |LUT2                  |   892|
+|20    |LUT3                  |   393|
+|21    |LUT4                  |  1971|
+|22    |LUT5                  |    96|
+|23    |LUT6                  |   323|
+|24    |MUXF7                 |    15|
+|25    |MUXF8                 |     1|
+|26    |FDCE                  |  2370|
+|27    |FDPE                  |    27|
+|28    |FDRE                  |   131|
+|29    |LD                    |    14|
+|30    |IBUF                  |    26|
+|31    |IOBUF                 |     1|
+|32    |OBUF                  |    43|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+------------------------------+------+
+|      |Instance                           |Module                        |Cells |
++------+-----------------------------------+------------------------------+------+
+|1     |top                                |                              |  7136|
+|2     |  u_Img_Processor                  |Img_Processor                 |  6524|
+|3     |    Erosion_inst                   |Erosion__xdcDup__1            |    24|
+|4     |      u_Shift_RAM_3x3_1bit         |Shift_RAM_3x3_1bit__xdcDup__1 |    16|
+|5     |    Erosion_inst2                  |Erosion                       |    24|
+|6     |      u_Shift_RAM_3x3_1bit         |Shift_RAM_3x3_1bit__xdcDup__2 |    16|
+|7     |    Sobel_Edge_Detect_inst         |Sobel_Edge_Detect             |   453|
+|8     |      u_Shift_RAM_3X3              |Shift_RAM_3X3                 |   139|
+|9     |    u_RGB_YCBCR                    |RGB_YCBCR                     |   232|
+|10    |    u_count_study                  |count_study                   |   888|
+|11    |    u_dilation                     |dilation__xdcDup__1           |    25|
+|12    |      u_Shift_RAM_3x3_1bit         |Shift_RAM_3x3_1bit__xdcDup__3 |    17|
+|13    |    u_dilation2                    |dilation                      |    46|
+|14    |      u_Shift_RAM_3x3_1bit         |Shift_RAM_3x3_1bit            |    15|
+|15    |    u_dynamic_gest_judge           |dynamic_gest_judge            |   125|
+|16    |    u_fuse                         |fuse                          |   257|
+|17    |    u_gesture_judge                |gesture_judge                 |    19|
+|18    |    u_hu_judge                     |hu_judge                      |    79|
+|19    |    u_hu_martix                    |hu_martix                     |  4330|
+|20    |  u_ov7725                         |ov7725                        |   382|
+|21    |    design_1_IICctrl_0_0           |IICctrl_0                     |   163|
+|22    |      inst                         |IICctrl                       |   163|
+|23    |        u_I2C_Controller           |I2C_Controller                |    96|
+|24    |    design_1_cam_ov7670_ov7725_0_0 |cam_ov7670_ov7725_0           |    84|
+|25    |      inst                         |cam_ov7670_ov7725             |    84|
+|26    |    design_1_ov7725_regData_0_0    |ov7725_regData_0              |    42|
+|27    |      inst                         |ov7725_regData                |    42|
++------+-----------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 968.941 ; gain = 601.617
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 323 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 968.941 ; gain = 263.176
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 968.941 ; gain = 601.617
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 553 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 968.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LD => LDCE: 14 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+261 Infos, 178 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 968.941 ; gain = 613.090
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 968.941 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/competition_synthesize/competition.runs/synth_1/picture_show.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file picture_show_utilization_synth.rpt -pb picture_show_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 24 21:50:39 2019...

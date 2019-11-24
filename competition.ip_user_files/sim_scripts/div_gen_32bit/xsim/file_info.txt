@@ -1,0 +1,1 @@
+div_gen_32bit.vhd,vhdl,xil_defaultlib,../../../../competition.srcs/sources_1/ip/div_gen_32bit/sim/div_gen_32bit.vhd,

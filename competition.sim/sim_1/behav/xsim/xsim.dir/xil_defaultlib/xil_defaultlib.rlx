@@ -1,0 +1,19 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/competition/competition.srcs/sim_1/new/picture_fangz.v,1572071341,verilog,,,,picture_fangz,,,,,,,,
+D:/competition/competition.srcs/sources_1/ip/Shift_RAM_3X3_8bit/sim/Shift_RAM_3X3_8bit.vhd,1572085199,vhdl,,,,shift_ram_3x3_8bit,,,,,,,,
+D:/competition/competition.srcs/sources_1/ip/vga_rom/sim/vga_rom.v,1572082839,verilog,,D:/competition/competition.srcs/sources_1/new/Img_Processor.v,,vga_rom,,,,,,,,
+D:/competition/competition.srcs/sources_1/new/Img_Processor.v,1571920217,verilog,,D:/competition/competition.srcs/sources_1/new/RGB_YCBCR.v,,Img_Processor,,,,,,,,
+D:/competition/competition.srcs/sources_1/new/Mean_Filter.v,1571925170,verilog,,D:/competition/competition.srcs/sources_1/new/RGB_YCBCR.v,,Mean_Filter,,,,,,,,
+D:/competition/competition.srcs/sources_1/new/RGB_YCBCR.v,1571554992,verilog,,D:/competition/competition.srcs/sources_1/new/Shift_RAM_3X3.v,,RGB_YCBCR,,,,,,,,
+D:/competition/competition.srcs/sources_1/new/Shift_RAM_3X3.v,1571923542,verilog,,D:/study/fpga/competition2/competition.srcs/sources_1/new/Sobel_Edge_Detect.v,,Shift_RAM_3X3,,,,,,,,
+D:/competition/competition.srcs/sources_1/new/picture_show.v,1572070186,verilog,,D:/competition/competition.srcs/sim_1/new/picture_fangz.v,,picture_show,,,,,,,,
+D:/study/competition_fuse/competition.srcs/sim_1/new/hhh_tb.v,1572280542,verilog,,,,hhh_tb,,,,,,,,
+D:/study/competition_fuse/competition.srcs/sim_1/new/tb_count_study.v,1572688604,verilog,,,,tb_count_study,,,,,,,,
+D:/study/competition_fuse/competition.srcs/sources_1/new/count_study.v,1572694386,verilog,,D:/study/competition_fuse/competition.srcs/sim_1/new/tb_count_study.v,,count_study,,,,,,,,
+D:/study/competition_fuse/competition.srcs/sources_1/new/hhh.v,1572615509,verilog,,D:/study/competition_fuse/competition.srcs/sim_1/new/hhh_tb.v,,hhh,,,,,,,,
+D:/study/competition_fuse_pzfs/competition.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/study/competition_fuse_pzfs/competition.srcs/sources_1/ip/div_gen_0/sim/div_gen_0.vhd,1573373577,vhdl,,,,div_gen_0,,,,,,,,
+D:/study/competition_fuse_pzfs/competition.srcs/sources_1/new/divide_simulation.v,1573374022,verilog,,,,divide_simulation,,,,,,,,

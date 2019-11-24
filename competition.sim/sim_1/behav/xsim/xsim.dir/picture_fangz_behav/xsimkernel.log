@@ -1,0 +1,7 @@
+Running: xsim.dir/picture_fangz_behav/xsimk.exe -simmode gui -wdb picture_fangz_behav.wdb -simrunnum 0 -socket 59758
+Design successfully loaded
+Design Loading Memory Usage: 6368 KB (Peak: 6368 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 15468 KB (Peak: 15468 KB)
+Simulation CPU Usage: 359 ms

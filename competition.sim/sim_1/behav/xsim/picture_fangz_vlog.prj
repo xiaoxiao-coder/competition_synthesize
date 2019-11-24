@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../competition.srcs/sources_1/ip/vga_rom/sim/vga_rom.v" \
+"../../../../competition.srcs/sources_1/new/Img_Processor.v" \
+"../../../../competition.srcs/sources_1/new/RGB_YCBCR.v" \
+"../../../../competition.srcs/sources_1/new/Shift_RAM_3X3.v" \
+"../../../../../study/fpga/competition2/competition.srcs/sources_1/new/Sobel_Edge_Detect.v" \
+"../../../../competition.srcs/sources_1/new/picture_show.v" \
+"../../../../competition.srcs/sim_1/new/picture_fangz.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
